@@ -1,0 +1,18 @@
+# SO/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Node
+node_modules/
+dist/
+build/
+.env
+
+# Python
+venv/
+.env*/
+__pycache__/
+*.pyc
