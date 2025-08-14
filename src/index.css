@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+
+/* Foco visível acessível */
+:focus-visible { outline: none; }
+.focus-ring { @apply ring-2 ring-offset-2 ring-blue-500 ring-offset-white dark:ring-offset-slate-900 rounded; }
+
+/* Botões de swatch */
+.swatch { @apply w-8 h-8 rounded-full border border-black/20 dark:border-white/20 shadow; }
+.swatch[aria-checked="true"] { @apply ring-2 ring-blue-500; }
+
+/* Scrollbar discreta */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(100,116,139,.5); border-radius: 999px; }
